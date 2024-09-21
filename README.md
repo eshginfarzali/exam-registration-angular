@@ -27,6 +27,3 @@ Dərsin kodu – char(3)
 Qiyməti – number (1,0)
 
 Proqram təminatı Firebase, Angular, Typescript ilə yazılacaq.
-.
-
-HYPERLINK "mailto:sadig@prosys.az" sadig@prosys.az
