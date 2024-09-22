@@ -1,1 +1,93 @@
-<p>student works!</p>
+<div class="container">
+  <div class="table-wrapper">
+    <div class="table-title">
+      <div class="row">
+        <div class="col-sm-6">
+          <h2>Şagirdlər</h2>
+        </div>
+        <div class="col-sm-6">
+          <button (click)="addNewLesson()" class="btn btn-success ml-3">
+            <span> Əlavə et </span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-plus-circle"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 8.5h-3v3h-1v-3h-3v-1h3v-3h1v3h3v1z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <table class="table table-striped table-hover">
+      <thead>
+        <tr>
+          <th>Nömrəsi</th>
+          <th>Adı</th>
+          <th>Soyadı</th>
+          <th>Sinifi</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (student of students; track $index) {
+        <tr>
+          <td>{{ student.studentNumber }}</td>
+          <td>{{ student.firstName }}</td>
+          <td>{{ student.lastName }}</td>
+          <td>{{ student.classNumber }}</td>
+
+          <td>
+            <button
+              (click)="editLesson(student)"
+              class="btn btn-sm btn-primary"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-pencil"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2H12v1.5L4 12.707V14h1.293L13 6.207V6h1.5v-.793L11.207 2zm.5-1h-1l-.5.5L3 8.793V11h2.207L14 4.207V3h-.5L11.707 1z"
+                />
+              </svg>
+            </button>
+            <button
+              (click)="deleteLesson(student)"
+              class="btn btn-sm btn-danger"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-trash"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M5.5 5.5v6a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-6h-5zm3.5 9a1.5 1.5 0 0 0 1.5-1.5v-6.5h-5v6.5A1.5 1.5 0 0 0 8 14.5zM1.5 4v1h1v9.5A2.5 2.5 0 0 0 5 16h6a2.5 2.5 0 0 0 2.5-2.5V5h1V4h-13zM10.5 1a.5.5 0 0 1 .5.5v1h-6v-1a.5.5 0 0 1 .5-.5h5zm-6 2h7l1.5 12.5A3.5 3.5 0 0 1 10 17H6a3.5 3.5 0 0 1-3.5-3.5L2 3h7z"
+                />
+              </svg>
+            </button>
+          </td>
+        </tr>
+        }
+      </tbody>
+    </table>
+    <!-- <ul class="pagination">
+      <li class="page-item disabled"><a href="#">Previous</a></li>
+      <li class="page-item"><a href="#" class="page-link">1</a></li>
+      <li class="page-item"><a href="#" class="page-link">2</a></li>
+      <li class="page-item active"><a href="#" class="page-link">3</a></li>
+      <li class="page-item"><a href="#" class="page-link">Next</a></li>
+    </ul> -->
+  </div>
+</div>
