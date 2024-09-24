@@ -51,9 +51,7 @@ export class LessonComponent {
     },
   ];
 
-  // Method to add a new lesson
   addNewLesson() {
-    // Logic to add a new lesson
     console.log('Add new lesson');
     this.lessons.push({
       courseCode: 'NEW101',
@@ -64,15 +62,11 @@ export class LessonComponent {
     });
   }
 
-  // Method to edit a lesson
   editLesson(lesson: any) {
-    // Logic to edit the lesson
     console.log('Edit lesson', lesson);
   }
 
-  // Method to delete a lesson
   deleteLesson(lesson: any) {
-    // Logic to delete the lesson
     console.log('Delete lesson', lesson);
     this.lessons = this.lessons.filter((l) => l !== lesson);
   }
