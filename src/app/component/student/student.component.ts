@@ -31,48 +31,10 @@ export class StudentComponent {
       lastName: 'Lee',
       classNumber: 9,
     },
-    {
-      studentNumber: 10005,
-      firstName: 'Eve',
-      lastName: 'Davis',
-      classNumber: 12,
-    },
-    {
-      studentNumber: 10006,
-      firstName: 'Frank',
-      lastName: 'Williams',
-      classNumber: 8,
-    },
-    {
-      studentNumber: 10007,
-      firstName: 'Grace',
-      lastName: 'Taylor',
-      classNumber: 7,
-    },
-    {
-      studentNumber: 10008,
-      firstName: 'Henry',
-      lastName: 'Wilson',
-      classNumber: 9,
-    },
-    {
-      studentNumber: 10009,
-      firstName: 'Isabella',
-      lastName: 'Martinez',
-      classNumber: 6,
-    },
-    {
-      studentNumber: 10010,
-      firstName: 'Jack',
-      lastName: 'Garcia',
-      classNumber: 5,
-    },
   ];
 
-  // Method to add a new lesson
-  addNewLesson() {
-    // Logic to add a new lesson
-    console.log('Add new lesson');
+  addNewStudent() {
+    console.log('Add new Student');
     this.students.push({
       studentNumber: 10002,
       firstName: 'Grace',
@@ -81,16 +43,12 @@ export class StudentComponent {
     });
   }
 
-  // Method to edit a lesson
-  editLesson(student: any) {
-    // Logic to edit the lesson
-    console.log('Edit lesson', student);
+  editStudent(student: any) {
+    console.log('Edit Student', student);
   }
 
-  // Method to delete a lesson
-  deleteLesson(student: any) {
-    // Logic to delete the lesson
-    console.log('Delete lesson', student);
+  deleteStudent(student: any) {
+    console.log('Delete Student', student);
     this.students = this.students.filter((l) => l !== student);
   }
 }

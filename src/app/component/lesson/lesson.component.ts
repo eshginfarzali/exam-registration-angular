@@ -8,34 +8,6 @@ import { Component } from '@angular/core';
 export class LessonComponent {
   lessons = [
     {
-      courseCode: 'MAT',
-      courseName: 'Mathematics',
-      classNumber: 10,
-      teacherFirstName: 'John',
-      teacherLastName: 'Doe',
-    },
-    {
-      courseCode: 'PHY',
-      courseName: 'Physics',
-      classNumber: 11,
-      teacherFirstName: 'Jane',
-      teacherLastName: 'Smith',
-    },
-    {
-      courseCode: 'CHE',
-      courseName: 'Chemistry',
-      classNumber: 10,
-      teacherFirstName: 'Albert',
-      teacherLastName: 'Einstein',
-    },
-    {
-      courseCode: 'BIO',
-      courseName: 'Biology',
-      classNumber: 9,
-      teacherFirstName: 'Marie',
-      teacherLastName: 'Curie',
-    },
-    {
       courseCode: 'ENG',
       courseName: 'English',
       classNumber: 12,

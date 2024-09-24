@@ -37,40 +37,10 @@ export class ExamComponent {
       examDate: new Date('2024-05-14'),
       grade: 10,
     },
-    {
-      courseCode: 'GEO',
-      studentNumber: 10006,
-      examDate: new Date('2024-05-15'),
-      grade: 8,
-    },
-    {
-      courseCode: 'HIS',
-      studentNumber: 10007,
-      examDate: new Date('2024-05-16'),
-      grade: 9,
-    },
-    {
-      courseCode: 'ART',
-      studentNumber: 10008,
-      examDate: new Date('2024-05-17'),
-      grade: 7,
-    },
-    {
-      courseCode: 'PE',
-      studentNumber: 10009,
-      examDate: new Date('2024-05-18'),
-      grade: 6,
-    },
-    {
-      courseCode: 'MUS',
-      studentNumber: 10010,
-      examDate: new Date('2024-05-19'),
-      grade: 10,
-    },
   ];
 
-  addNewLesson() {
-    console.log('Add new lesson');
+  addNewExam() {
+    console.log('Add new Exam');
     this.exams.push({
       courseCode: 'HIS',
       studentNumber: 10008,
@@ -79,11 +49,11 @@ export class ExamComponent {
     });
   }
 
-  editLesson(exam: any) {
+  editExam(exam: any) {
     console.log('Edit exam', exam);
   }
 
-  deleteLesson(exam: any) {
+  deleteExam(exam: any) {
     console.log('Delete exam', exam);
     this.exams = this.exams.filter((l) => l !== exam);
   }
